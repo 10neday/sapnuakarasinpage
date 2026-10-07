@@ -6,12 +6,17 @@
     <title>แซ่บนัว กาฬสินธุ์ | ร้านอาหารอีสาน รสจัดจ้าน</title>
     <meta
       name="description"
-      content="แซ่บนัว กาฬสินธุ์ ร้านอาหารอีสานรสท้องถิ่น เปิดอังคาร-อาทิตย์ 09:00-20:00 มีที่นั่งกลางแจ้งและบริการรับสินค้าที่ร้าน"
+      content="แซ่บนัว กาฬสินธุ์ ร้านอาหารอีสานรสท้องถิ่น เปิดอังคาร-อาทิตย์ 09:00-21:00 มีที่นั่งกลางแจ้งและบริการรับสินค้าที่ร้าน"
     />
     <link rel="preload" href="assets/zabnua-feast.png" as="image" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700;800;900&family=Noto+Serif+Thai:wght@500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <a class="skip-link" href="#menu">ข้ามไปดูเมนูอาหาร</a>
+    <div class="topbar">รสอีสานเต็มหัวใจ <span>✦</span> แซ่บ นัว ถึงเครื่อง <span>✦</span> อังคาร–อาทิตย์ 09:00–21:00 น.</div>
     <header class="site-header">
       <a class="brand" href="#home" aria-label="แซ่บนัว กาฬสินธุ์">
         <span class="brand-mark">ซน</span>
@@ -21,9 +26,9 @@
         </span>
       </a>
       <nav class="main-nav" aria-label="เมนูหลัก">
-        <a href="#overview">ภาพรวม</a>
+        <a href="#overview">เรื่องราวของเรา</a>
         <a href="#menu">เมนู</a>
-        <a href="#hours">เวลา</a>
+        <a href="#hours">เวลาเปิดร้าน</a>
         <a href="#reviews">รีวิว</a>
         <a href="#contact">ติดต่อ</a>
       </nav>
@@ -35,11 +40,12 @@
         <img class="hero-image" src="assets/zabnua-feast.png" alt="สำรับอาหารอีสานจัดเต็มบนโต๊ะไม้ ส้มตำถาด ไก่ทอด ลาบ และเมนูซีฟู้ดรสจัด" />
         <div class="hero-scrim"></div>
         <div class="hero-content">
-          <p class="eyebrow">ร้านอาหารอีสาน · รสท้องถิ่น · ราคามิตรภาพ</p>
-          <h1 id="hero-title">แซ่บนัว กาฬสินธุ์</h1>
+          <p class="eyebrow">ต้นตำรับความนัว · ครัวอีสานรสจัดจ้าน</p>
+          <h1 id="hero-title">แซ่บนัว<span>กาฬสินธุ์</span></h1>
+          <p class="hero-tagline">แซ่บถึงใจ... นัวถึงเครื่อง</p>
           <p class="hero-copy">
-            ส้มตำ ยำ เหลา ไก่ย่าง และเมนูอีสานจัดจ้าน เสิร์ฟในบรรยากาศสบาย ๆ
-            แต่ดูเรียบร้อยน่าเชื่อถือ เหมาะทั้งแวะกินระหว่างทางและมื้อครอบครัว
+            ยกสำรับความอร่อยแบบอีสานมาไว้ที่โต๊ะคุณ<br />
+            ส้มตำปลาร้าหอมนัว ยำรสแซ่บ และจานโปรดที่อยากชวนกันมาล้อมวง
           </p>
           <div class="rating-row" aria-label="คะแนนรีวิว 4.7 จาก 49 ความเห็น">
             <strong>4.7</strong>
@@ -48,7 +54,7 @@
             <span class="price">฿1-300 ต่อคน</span>
           </div>
           <div class="hero-actions">
-            <a class="button primary" href="tel:0952281911">โทรสอบถามร้าน</a>
+            <a class="button primary" href="#menu">เปิดสำรับความแซ่บ <span aria-hidden="true">↗</span></a>
             <a
               class="button secondary"
               href="https://www.google.com/maps/place/%E0%B9%81%E0%B8%8B%E0%B9%88%E0%B8%9A%E0%B8%99%E0%B8%B1%E0%B8%A7+%E0%B8%81%E0%B8%B2%E0%B8%AC%E0%B8%AA%E0%B8%B4%E0%B8%99%E0%B8%98%E0%B8%B8%E0%B9%8C/@13.9953147,99.2778668,15.25z/data=!4m6!3m5!1s0x30e37b5aae1f90b3:0xc1370c43667e1dec!8m2!3d13.9944162!4d99.2925643!16s%2Fg%2F11m2sp90qp?entry=tts&shorturl=1"
@@ -59,7 +65,10 @@
             </a>
           </div>
         </div>
+        <div class="hero-seal" aria-hidden="true"><span>รสมืออีสาน</span><strong>แซ่บ<br />นัว</strong><span>ถึงเครื่อง · ถึงใจ</span></div>
+        <div class="hero-caption"><span>THE ISAN TABLE</span> ความสุขที่อร่อยที่สุด คือการได้กินข้าวด้วยกัน</div>
       </section>
+      <div class="woven-band" aria-hidden="true"></div>
 
       <section class="quick-info" aria-label="ข้อมูลสำคัญ">
         <article>
@@ -86,8 +95,8 @@
 
       <section class="section intro" id="overview">
         <div class="section-copy">
-          <p class="section-kicker">ภาพรวม</p>
-          <h2>ความแซ่บแบบอีสานแท้ ในหน้าตาที่ดูสะอาดและน่าแวะ</h2>
+          <p class="section-kicker">จากครัวอีสาน ด้วยหัวใจ</p>
+          <h2>คำแรกติดใจ<br />คำต่อไป <em>คิดฮอดอีสาน</em></h2>
         </div>
         <div class="intro-panel">
           <p>
@@ -105,7 +114,7 @@
       <section class="section menu-section" id="menu">
         <div class="section-heading">
           <p class="section-kicker">เมนูแนะนำ</p>
-          <h2>เมนูเด่นที่ทำให้คนอยากแวะ</h2>
+          <h2>มาแซ่บนัว ต้องลองสำรับนี้</h2>
         </div>
         <div class="menu-grid">
           <article class="menu-card highlight">
@@ -117,7 +126,7 @@
           <article class="menu-card">
             <span>ส้มตำ</span>
             <h3>ตำปูปลาร้า</h3>
-            <p>เมนูพื้นฐานที่วัดรสมือร้าน ปลาร้าหอม มะละกอกรอบ</p>
+            <p>มะละกอกรอบ คลุกเคล้าปลาร้าหอมนัว แซ่บแบบที่คิดถึง</p>
             <b>30.-</b>
           </article>
           <article class="menu-card">
@@ -138,14 +147,15 @@
           <div>
             <p class="section-kicker">เมนูจริงจากร้าน</p>
             <h3>เลือกดูรายการอาหารและราคา</h3>
-            <p>ภาพเมนูจากร้านช่วยให้ลูกค้าตัดสินใจก่อนเดินทางหรือโทรสอบถามได้ง่ายขึ้น</p>
+            <p>ถูกใจสายตำ สายยำ หรือสายกับแกล้ม เลือกจานที่ชอบแล้วชวนคนรู้ใจมาแซ่บด้วยกัน</p>
+            <p class="menu-hint">แตะภาพเพื่อดูเมนูขนาดเต็ม ↗</p>
           </div>
           <div class="menu-images">
             <a href="assets/menu-1.png" target="_blank" rel="noreferrer">
-              <img src="assets/menu-1.png" alt="เมนูแซ่บนัว กาฬสินธุ์ หน้าที่หนึ่ง" />
+              <img loading="lazy" src="assets/menu-1.png" alt="เมนูแซ่บนัว กาฬสินธุ์ หน้าที่หนึ่ง" />
             </a>
             <a href="assets/menu-2.png" target="_blank" rel="noreferrer">
-              <img src="assets/menu-2.png" alt="เมนูแซ่บนัว กาฬสินธุ์ หน้าที่สอง" />
+              <img loading="lazy" src="assets/menu-2.png" alt="เมนูแซ่บนัว กาฬสินธุ์ หน้าที่สอง" />
             </a>
           </div>
         </div>
@@ -191,7 +201,7 @@
       <section class="section reviews" id="reviews">
         <div class="section-heading">
           <p class="section-kicker">รีวิวจากลูกค้า</p>
-          <h2>คะแนนดีเพราะรสชาติและความคุ้มค่า</h2>
+          <h2>ความอร่อย ที่ลูกค้าเล่าต่อ</h2>
         </div>
         <div class="review-layout">
           <aside class="score-panel" aria-label="คะแนนรวม">
@@ -244,7 +254,7 @@
     <footer class="site-footer">
       <div>
         <strong>แซ่บนัว กาฬสินธุ์</strong>
-        <p>อาหารอีสานรสท้องถิ่น · อังคาร-อาทิตย์ 09:00-20:00</p>
+        <p>อาหารอีสานรสท้องถิ่น · อังคาร-อาทิตย์ 09:00-21:00</p>
       </div>
       <a href="tel:0952281911">095 228 1911</a>
     </footer>
